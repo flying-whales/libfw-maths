@@ -4,7 +4,9 @@ project(fwlib_maths)
 include("cmake/utilities.cmake")
 
 set(fwlib_maths_src_files
-    "src/temp.cpp"
+    "src/vector2.cpp"
+    "src/vector3.cpp"
+    "src/vector4.cpp"
 )
 
 set(fwlib_maths_include_dir "include")
