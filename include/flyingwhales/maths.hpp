@@ -12,3 +12,7 @@ namespace fw
 	using Size3 = Metric3<uint32_t>;
 	using Size4 = Metric4<uint32_t>;
 }
+
+#include <flyingwhales/maths/vector2.hpp>
+#include <flyingwhales/maths/vector3.hpp>
+#include <flyingwhales/maths/vector4.hpp>
