@@ -16,3 +16,5 @@ namespace fw
 #include <flyingwhales/maths/vector2.hpp>
 #include <flyingwhales/maths/vector3.hpp>
 #include <flyingwhales/maths/vector4.hpp>
+
+#include <flyingwhales/maths/matrix4.hpp>
