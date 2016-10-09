@@ -40,3 +40,6 @@ namespace fw
 	Metric2<T> operator/(Metric2<T> left, const Metric2<T> &right);
 
 }
+
+// implementation in separate file
+#include <flyingwhales/maths/metric2_impl.hpp>

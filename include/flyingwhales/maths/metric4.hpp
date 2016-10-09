@@ -60,3 +60,6 @@ namespace fw
 	Metric4<T> operator/(Metric4<T> left, const Metric4<T> &right);
 
 }
+
+// implementation in separate file
+#include <flyingwhales/maths/metric4_impl.hpp>

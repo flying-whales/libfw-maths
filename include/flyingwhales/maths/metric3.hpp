@@ -51,3 +51,6 @@ namespace fw
 	Metric3<T> operator/(Metric3<T> left, const Metric3<T> &right);
 
 }
+
+// implementation in separate file
+#include <flyingwhales/maths/metric3_impl.hpp>
