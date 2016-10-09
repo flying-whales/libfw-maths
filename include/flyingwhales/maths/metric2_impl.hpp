@@ -8,7 +8,7 @@ namespace fw
 
 	template<typename T>
 	Metric2<T>::Metric2()
-		: Metric2(T(), T())
+		: Metric2(T(0), T(0))
 	{}
 
 	template<typename T>
