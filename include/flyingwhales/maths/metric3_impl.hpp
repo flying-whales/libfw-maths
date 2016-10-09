@@ -61,30 +61,6 @@ namespace fw
 	}
 
 	template<typename T>
-	Metric3<T> operator+(Metric3<T> left, const Metric3<T> &right)
-	{
-		return left.add(right);
-	}
-
-	template<typename T>
-	Metric3<T> operator-(Metric3<T> left, const Metric3<T> &right)
-	{
-		return left.subtract(right);
-	}
-
-	template<typename T>
-	Metric3<T> operator*(Metric3<T> left, const Metric3<T> &right)
-	{
-		return left.multiply(right);
-	}
-
-	template<typename T>
-	Metric3<T> operator/(Metric3<T> left, const Metric3<T> &right)
-	{
-		return left.divide(right);
-	}
-
-	template<typename T>
 	Metric3<T> &Metric3<T>::operator+=(const Metric3<T> &other)
 	{
 		return add(other);
@@ -126,6 +102,30 @@ namespace fw
 	{
 		static_assert(std::is_convertible<T, T2>::value, "Cannot convert template types");
 		return Metric3<T2>(static_cast<T2>(x), static_cast<T2>(y), static_cast<T2>(z));
+	}
+
+	template<typename T>
+	Metric3<T> operator+(Metric3<T> left, const Metric3<T> &right)
+	{
+		return left.add(right);
+	}
+
+	template<typename T>
+	Metric3<T> operator-(Metric3<T> left, const Metric3<T> &right)
+	{
+		return left.subtract(right);
+	}
+
+	template<typename T>
+	Metric3<T> operator*(Metric3<T> left, const Metric3<T> &right)
+	{
+		return left.multiply(right);
+	}
+
+	template<typename T>
+	Metric3<T> operator/(Metric3<T> left, const Metric3<T> &right)
+	{
+		return left.divide(right);
 	}
 
 }

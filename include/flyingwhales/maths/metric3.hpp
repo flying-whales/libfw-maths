@@ -29,11 +29,6 @@ namespace fw
 		Metric3<T> &multiply(const Metric3<T> &other);
 		Metric3<T> &divide(const Metric3<T> &other);
 
-		friend Metric3<T> operator+(Metric3<T> left, const Metric3<T> &right);
-		friend Metric3<T> operator-(Metric3<T> left, const Metric3<T> &right);
-		friend Metric3<T> operator*(Metric3<T> left, const Metric3<T> &right);
-		friend Metric3<T> operator/(Metric3<T> left, const Metric3<T> &right);
-
 		Metric3<T> &operator+=(const Metric3<T> &other);
 		Metric3<T> &operator-=(const Metric3<T> &other);
 		Metric3<T> &operator*=(const Metric3<T> &other);
@@ -45,5 +40,14 @@ namespace fw
 		template<typename T2>
 		explicit operator Metric3<T2>() const;
 	};
+
+	template<typename T>
+	Metric3<T> operator+(Metric3<T> left, const Metric3<T> &right);
+	template<typename T>
+	Metric3<T> operator-(Metric3<T> left, const Metric3<T> &right);
+	template<typename T>
+	Metric3<T> operator*(Metric3<T> left, const Metric3<T> &right);
+	template<typename T>
+	Metric3<T> operator/(Metric3<T> left, const Metric3<T> &right);
 
 }
