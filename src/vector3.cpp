@@ -13,6 +13,26 @@ namespace fw
 		: Metric3(metric)
 	{}
 
+	Vector3 &Vector3::multiply(const float &scalar)
+	{
+		x *= scalar;
+		y *= scalar;
+		z *= scalar;
+
+		return *this;
+	}
+
+	Vector3 Vector3::operator*(const float &scalar) const
+	{
+		auto copy = *this;
+		return copy.multiply(scalar);
+	}
+
+	Vector3 &Vector3::operator*=(const float &scalar)
+	{
+		return multiply(scalar);
+	}
+
 	Vector3 &Vector3::normalize()
 	{
 		float scale = 1.0f / magnitude();

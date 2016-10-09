@@ -13,6 +13,10 @@ namespace fw
 		Vector3();
 		Vector3(const Metric3<float> &metric);
 
+		Vector3 &multiply(const float &scalar);
+		Vector3 operator*(const float &scalar) const;
+		Vector3 &operator*=(const float &scalar);
+
 		Vector3 &normalize();
 		static Vector3 normalize(Vector3 vector);
 
