@@ -7,6 +7,7 @@ set(libfw_maths_src_files
     "src/vector2.cpp"
     "src/vector3.cpp"
     "src/vector4.cpp"
+    "src/matrix4.cpp"
 )
 
 set(libfw_maths_include_dir "include")
