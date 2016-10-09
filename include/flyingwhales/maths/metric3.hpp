@@ -18,6 +18,7 @@ namespace fw
 			};
 			Metric2<T> xy;
 		};
+		T z;
 	public:
 		Metric3();
 		Metric3(const Metric2<T> &xy, const T &z);
