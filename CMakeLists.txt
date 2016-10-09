@@ -8,6 +8,7 @@ set(libfw_maths_src_files
     "src/vector3.cpp"
     "src/vector4.cpp"
     "src/matrix4.cpp"
+    "src/quaternion.cpp"
 )
 
 set(libfw_maths_include_dir "include")
