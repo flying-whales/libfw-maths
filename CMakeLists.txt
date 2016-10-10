@@ -1,8 +1,7 @@
 cmake_minimum_required(VERSION 3.1)
 project(libfw_maths)
 
-set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
-include("utilities")
+include("cmake/utilities.cmake")
 
 set(libfw_maths_src_files
     "src/vector2.cpp"
